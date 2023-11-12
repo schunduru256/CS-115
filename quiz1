@@ -1,0 +1,16 @@
+def add (x,y):
+
+        return x+y   #performs the addition of parameters x and y
+
+def square(x):
+
+        return x**2      #performs taking the square of parameter x
+
+def calculate(L):
+
+        squares = map(square, L)     #given the list L, this line of code finds the square of every element in list L
+
+        return reduce(add, squares)/len(L)    #finds the sum of squares that we calculated in the previous line
+
+calculate([1, 3, 5, 6])
+
